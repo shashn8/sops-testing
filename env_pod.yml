@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    annotations:
+        secrets-injector.fortanix.com/inject-through-environment: "true"
+        secrets-injector.fortanix.com/inject-secret-SECRET: ENC[AES256_GCM,data:sgjmspgBQLyzz2HDFOJz,iv:ycUaxjPABD5598PbYgyPEtHW4OsJTR4gnvNF8MLUSM0=,tag:hMEnbfFy64NGcdnE4jDpuQ==,type:str]
+        secrets-injector.fortanix.com/inject-template-SECRET: ENC[AES256_GCM,data:EQ1+dCzIt2cBUMp7lDPYvg7Z6L2pqXLXHUtfiA==,iv:p8AVoouRNbfW45YT8DrQAapzJqWU3nrcMgxZhC42Z0g=,tag:gLO0HgokDrrYe2iC91FvfQ==,type:str]
+    labels:
+        run: busy
+    name: env-pod
+    namespace: project1
+spec:
+    imagePullSecrets:
+        - name: regcred
+    containers:
+        - name: env-demo-container
+          image: goodwork2020/testimage:1.0
+          command:
+            - /app/test.sh
+          args:
+            - "10000"
+    serviceAccountName: project1_sa
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    fortanixdsm:
+        - uuid: 1aea151c-699a-4ef3-acbf-c015a943c396
+          created_at: "2023-11-07T09:13:58Z"
+          enc: OEJRVXptZ1RpSER6Y3krZnZwNnFuWjhOOWU0U0Z0WmtlT05tZUZIeXJCRT06NnBEWGFEUTV0c04zYnJqZDpCcHU2WFQyRDdxaGJteHBiUzE2cnhRPT0=
+    lastmodified: "2023-11-07T09:13:58Z"
+    mac: ENC[AES256_GCM,data:oInnDYMZRc2XmKJf5eNc2yunS+yMBirHi/+YUcIsU9ksekulkCX5hhiZHenVCDcG44sA1qnlBsHgvIGUZ3mh+ytvm2PaLQsmqdX0EzTBAHVYMLovP+KeJjqBnDRG9oxnwb4esCCKkoJ1WjtS/n8fKVpbNw9KG/3ItU/zV9w5ZA0=,iv:Lbcf5GYnPGvmXgQFqyPQDMynEKOWrsaPWK2M//QSL9I=,tag:v8ck10cadXbRqK/q4i56Bw==,type:str]
+    pgp: []
+    encrypted_suffix: SECRET
+    version: 3.8.1
