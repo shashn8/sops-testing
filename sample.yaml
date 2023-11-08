@@ -1,0 +1,30 @@
+# This is a YAML example
+name: John Doe
+age: 30
+email: johndoe@example.com
+password: ENC[AES256_GCM,data:YJjbrQzCnWTmFXwy0Q==,iv:hBO72aEsuOdfJbAjAvvYnUIVrrqhnAwCTjIuvv2oQgQ=,tag:XErydo9/KR4zzl4DRxLrAA==,type:str]
+isStudent: true
+grades:
+    Math: 95
+    Science: 88
+    History: 75
+address:
+    street: 123 Main St
+    city: Anytown
+    state: CA
+    postalCode: 12345
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    fortanixdsm:
+        - uuid: 1aea151c-699a-4ef3-acbf-c015a943c396
+          created_at: "2023-11-08T09:45:59Z"
+          enc: dDBia2g5UWd3QzhFWEdrZTlMd2RTaGhzeUdENXRhMElsMzNKZHIyMFB6MD06R0FJNmlUcXJ6cXhyVkd2QzpKL0RlZlRvcW1JZEN6eUdXYXQvcVh3PT0=
+    lastmodified: "2023-11-08T09:45:59Z"
+    mac: ENC[AES256_GCM,data:Px+7e0ImCQd9Tx81TA+pKm1uBrLwkkmKIcils66pnlzICcZClzBeCreeHHarI5/3PWUUeUqKGw5yArll+QdYdfLd4pNRJcNjWKr1Ki688qYSqGHYEAf5MU/3IDvmSy0RrijkT6wggJNzPDz2IQwhDt7TBh1xDw/CVOIlv/AoZ+A=,iv:hG4euJrJWIUmvWGNA9Xcp34ql5aW27OUFHC02Z63iYw=,tag:6+7gd5pkNcGNReTRztWsXQ==,type:str]
+    pgp: []
+    encrypted_regex: password
+    version: 3.8.1

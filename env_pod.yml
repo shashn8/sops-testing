@@ -1,0 +1,37 @@
+apiVersion: ENC[AES256_GCM,data:vC0R0Q==,iv:O+3Ptm9006g2MLKUDv2VDS3QLQ6X139jMDjzTnGdPgo=,tag:dEOdg8aRIR7nKa0L44YcFg==,type:str]
+kind: ENC[AES256_GCM,data:2RjI,iv:e22Jh5fPItmV2A6ZSHF+e7dpY0Hk6VKroNIGb/ERqwU=,tag:bUJqMYwabwIuHPM3CNbQzA==,type:str]
+metadata:
+    annotations:
+        secrets-injector.fortanix.com/inject-through-environment: ENC[AES256_GCM,data:/Eo1cA==,iv:gq7QQELob/qohWbh5AKsxmN2wV2bTQWW8/Jn1C3BTxU=,tag:hwKIibUjgJjQ5/2QzCir1g==,type:str]
+        secrets-injector.fortanix.com/inject-secret-SECRET: ENC[AES256_GCM,data:h2QM5drYlQGqhc/V1Qmy,iv:awiw0DiRORDLwIcmvSg0sgOq27tehu1oqwbHOwGHosY=,tag:Hq8ov3/ih51mw36Dgu14ug==,type:str]
+        secrets-injector.fortanix.com/inject-template-SECRET: ENC[AES256_GCM,data:YzBWtyHbgnWZgGSCkscDgLhzNOwdq2FRBjax0Q==,iv:TBGR1gQv0Vei0t5yBKh56yM49VpZjpfxeW2Eqzo4wYI=,tag:BVKhrnF4QPRvpBsJGuI4hw==,type:str]
+    labels:
+        run: ENC[AES256_GCM,data:e93yNA==,iv:+L/v8SY3GFqqr1N5lbBw3w0VWNWyl2zg4F8RPsV5SWA=,tag:QWkwz3sSWXnoy9/c4djTmg==,type:str]
+    name: ENC[AES256_GCM,data:kuudssMlsw==,iv:z6TIJh3Kh91uteFIeutK4Hudxa8vzm/zfjYX4V1yylw=,tag:IoaX4jaEVx/OyL+jh3qKVw==,type:str]
+    namespace: ENC[AES256_GCM,data:k6OjgEbp9EQ=,iv:nXEbZSZnpOTEv6RcX+OXjgiz4gHoZiVyrWI5VasnBw0=,tag:9+6axPjlSnzgbJjbAv9hAg==,type:str]
+spec:
+    imagePullSecrets:
+        - name: ENC[AES256_GCM,data:TbsubeuKRg==,iv:1rynRePPYdPTUqfvCssvu1XGeAxY+wNXJyI3sYMcZQs=,tag:WEq/kCaLapQ+Id72A0rwxw==,type:str]
+    containers:
+        - name: ENC[AES256_GCM,data:glEL1UP8Eie1N4d7bsWDN8MJ,iv:OrMogyQ/HMlnu2hnEO2JkoPQS+4TyunVB/vEszUs2Fc=,tag:Vm6vRX9hndd0VMUv+tiS/A==,type:str]
+          image: ENC[AES256_GCM,data:amPfxod1KJapPtKIOjDDLebA0NgviNOaXdE=,iv:vSElSG0AfMijQxTASl7wxi1VUSgqxpQHn0P5B028vrc=,tag:Pd0i9wsoXJb4n/jkMawFNQ==,type:str]
+          command:
+            - ENC[AES256_GCM,data:MzBiQu67FkTB0HMt,iv:jzBpLOTkvuNCryrxMkF0icEOkbK6iYKBueDLcKDx7/Y=,tag:6100wSd9fFI2N6IkfC/mYQ==,type:str]
+          args:
+            - ENC[AES256_GCM,data:XWcaJ6I=,iv:kclNPB4g+yXZ1jslZlBDbGkxQZ5CxL+h0cKdEY8P1rM=,tag:x/LVACZTlk5mqiJJlfM0fA==,type:str]
+    serviceAccountName: ENC[AES256_GCM,data:JmnQP4fqGQ6wsTI=,iv:e2WYrP/JotOaVqhNU0O/mMai1qhK304xSfynLjTqTyY=,tag:dAJvxgmfLntkwby1ouV/sQ==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    fortanixdsm:
+        - uuid: 1aea151c-699a-4ef3-acbf-c015a943c396
+          created_at: "2023-11-08T09:40:50Z"
+          enc: eVlDK1hKM2V3NUJYaW4wbFpSdnRKQUFRRDdWODFzYlB0ZFRjdFFEYXhraz06MzNIV0F0U1dRWlJlTjE2RzpheVdhM3RZVTZydnJObi9CSUl2c01RPT0=
+    lastmodified: "2023-11-08T09:44:32Z"
+    mac: ENC[AES256_GCM,data:RacgKeUl4lyTx+mM4Terhos3oVF8Ckq9Vg+nLHx3QsY+mnuuYgNknvfBf1RH4lVvXcTiohFUOi7hd1Hc2J651wFBuU9ptu+mB+m5suuqbX9Vp8yPJGVF2dEvGyrH0mjxHoVaPY+64IAOa2MD02illzIHBUOd+bDnpKiGF2JjwgM=,iv:3/yVb1dEOueZhsibdPvg7CHSRzJWX1xxOv0P2cFDq0w=,tag:11vVJcrIdZosxW6bv+StpA==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.8.1
